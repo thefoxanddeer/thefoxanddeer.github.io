@@ -38,6 +38,33 @@ h1 a {
 	float: right;
 }
 
+.logo img {
+	height: 300px;
+}
+
+@media (max-width: 1200px) {
+  #overlay {
+    float: left;
+		margin-left: 60px;
+		position: absolute;
+		margin-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+	.logo img {
+		height: auto;
+		width: 100%;
+	}
+
+	#overlay {
+		float: left;
+		margin-left: 60px;
+		position: absolute;
+		margin-top: 0px;
+	}
+}
+
 #header {
 	height: 140px;
 	position: absolute;
