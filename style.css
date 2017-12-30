@@ -1,8 +1,9 @@
 @CHARSET "UTF-8";
 
+/* body and header text */
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 body a {
@@ -10,75 +11,68 @@ body a {
 	color: #f26522;
 }
 
-h1 {
+#bigtext {
+	font-family: 'Bree Serif', serif;
 	font-size: 40px;
 }
 
-h1 a {
-	color: black;
+#bigtext .links a {
+	text-decoration: none;
 }
 
-.app img {
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-}
+/* logo */
 
-.app img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
-		transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+.logo img {
+	width: 40vw;
+	height: 14.7vw;
 }
 
 #overlay {
-	position: relative;
-	margin-top: 100px;
-	margin-right: 50px;
 	float: right;
-}
-
-.logo img {
-	height: 300px;
-}
-
-@media (max-width: 1200px) {
-  #overlay {
-    float: left;
-		margin-left: 60px;
-		position: absolute;
-		margin-top: 60px;
-  }
-}
-
-@media (max-width: 600px) {
-	.logo img {
-		height: auto;
-		width: 100%;
-	}
-
-	#overlay {
-		float: left;
-		margin-left: 60px;
-		position: absolute;
-		margin-top: 0px;
-	}
-}
-
-#header {
-	height: 140px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	float: left;
+	top: 5vh;
+	right: 10%;
 }
 
-#header h1 {
-	margin-left: 10px;
+/* app images */
+.app img {
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	width: 8vw;
 }
 
+.app img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+/* tipsy */
+.tipsy {
+	font-size: 25px;
+	position: absolute;
+	padding: 5px;
+	z-index: 100000;
+}
+
+.tipsy-inner {
+	color: #000;
+	max-width: 200px;
+	padding: 5px 8px 4px 8px;
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/* content */
 #content {
-	margin-top: 150px;
 	width: 85%;
 	margin-right: auto;
 	margin-left: auto;
@@ -88,55 +82,38 @@ h1 a {
 	line-height: 30px;
 }
 
-#bigtext {
-	font-family: 'Bree Serif', serif;
-	font-size: 35px;
+/* about */
+#about {
+	position: relative;
+	width: 450px;
+	float: left;
+	top: 0;
+	left: 0;
 }
 
-#bigtext .links a {
-	text-decoration: none;
+#about img {
+	width: 450px;
 }
 
-table, th, td {
-    border: 1px solid black;
-	border-collapse: collapse;
+.person img {
+	width: 370px !important;
+	top: 37px;
+	left: 37px;
 }
 
-th, td {
-    padding: 5px;
-}
+@media (max-width: 400px) {
+	#about {
+		width: 100%;
+	}
 
-input {
-	font-family: inherit;
-}
+	#about img {
+		width: 100%;
+	}
 
-textarea {
-	font-family: inherit;
-}
+	.person img {
+		width: 82% !important;
+		top: 20px;
+		left: 20px;
+	}
 
-/* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-    background-color: #12B2B1;
-    color: #444;
-    cursor: pointer;
-    padding: 10px 18px 10px 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }
