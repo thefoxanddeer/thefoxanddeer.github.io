@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <!-- Basic Site Info -->
+		<link rel="shortcut icon" href="images/prof.png" />
+		<title>The Fox & Deer</title>
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'/>
+
+		<!-- Stylesheets -->
+		<link href='style.css' rel='stylesheet' type='text/css' />
+
+		<!-- Javascript -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script type='text/javascript' src='jquery.tipsy.js'></script>
+		<script type='text/javascript'>
+			 $(function() {
+				 $('#owl').tipsy();
+				 $('#cardinal').tipsy();
+				 $('#fox').tipsy();
+				 $('#duck').tipsy();
+			 });
+		 </script>
+	</head>
+
+	<body>
+		<!-- Logo and App Icons -->
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png"/></a>
+		</div>
+		<div id="overlay" class="app">
+			<a id="owl" href="owlist.html" title="OwList">
+				<img src="images/olist.png"></img>
+			</a>
+			<a id="cardinal" href="cardinalnumbers.html" title="CardinalNumbers">
+				<img src="images/cnumbers.png"></img>
+			</a>
+			<a id="fox" href="foxtimer.html" title="FoxTimer">
+				<img src="images/ftimer.png"></img>
+			</a>
+			<a id="duck" href="duckdock.html" title="DuckDock">
+				<img src="images/ddock.png"></img>
+			</a>
+		</div>
+
+		<!-- Content -->
+		<div id="content">
+			<div id="bigtext">Our Mission</div>
+				<p>
+					We are an independent, animal-themed macOS and iOS development team
+					from the Cincinnati, Ohio area. Our apps include OwlList, FoxTimer,
+					DuckDock, and CardinalNumbers, which aim to help with productivity in
+					a cute and simple way.
+				</p>
+
+			<div id="bigtext">About Us</div>
+
+			<!-- Pics and Descriptors -->
+
+			<div id="about">
+				<img src="images/swirls.png" style="position: relative; top:0; left:0; z-index:3000;"/>
+				<div class="person">
+					<img src="images/dan.png" style="position: absolute;"/>
+				</div>
+				<p>
+					<img src="images/fox.png" style="position: relative; height: 90px; width: auto; margin-left: auto; margin-right: auto;"/>
+				</p>
+				<p>
+					<a href="">Dan Turner</a> is the developer of the team's apps. He has
+ 						years of experience in iOS application consulting, and has a focus
+						on programming visual components within apps.
+				</p>
+			</div>
+			<div id="about">
+				<img src="images/loops.png" style="position: relative; top:0; left:0;"/>
+				<div class="person">
+					<img src="images/sage.png" style="position: absolute;"/>
+				</div>
+				<p>
+					<img src="images/deer.png" style="position: relative; height: 90px; width: auto; margin-left: auto; margin-right: auto;"/>
+				</p>
+				<p>
+					<a href="http://www.sageconger.com" style="color: #8c6239">Sage
+						Conger</a> is the web developer, artist, and designer of the team's
+						apps. She is a senior in college and the proud girlfriend of Dan Turner!
+				</p>
+			</div>
+
+		</div>
+	</body>
+</html>
