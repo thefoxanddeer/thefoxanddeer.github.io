@@ -48,47 +48,18 @@
 
 		<!-- Content -->
 		<div id="content">
-			<div id="bigtext">Our Mission</div>
+			<div id="bigtext">Contact Us</div>
+        <p>We can be reached by email at thefoxanddeer@gmail.com.
 				<p>
-					We are an independent, animal-themed macOS and iOS development team
-					from the Cincinnati, Ohio area. Our apps include OwlList, FoxTimer,
-					DuckDock, and CardinalNumbers, which aim to help with productivity in
-					a cute and simple way.
-				</p>
+					</a>
+        <p>Or, if you'd rather use a contact form...</p>
 
-			<div id="bigtext">About Us</div>
-
-			<!-- Pics and Descriptors -->
-
-			<div id="about">
-				<img src="images/swirls.png" style="position: relative; top:0; left:0; z-index:3000;"/>
-				<div class="person">
-					<img src="images/dan.png" style="position: absolute;"/>
-				</div>
-				<p>
-					<img src="images/fox.png" style="position: relative; height: 90px; width: auto; margin-left: auto; margin-right: auto;"/>
-				</p>
-				<p>
-					<a href="">Dan Turner</a> is the developer of the team's apps. He has
- 						years of experience in iOS application consulting, and has a focus
-						on programming visual components within apps.
-				</p>
-			</div>
-			<div id="about">
-				<img src="images/loops.png" style="position: relative; top:0; left:0;"/>
-				<div class="person">
-					<img src="images/sage.png" style="position: absolute;"/>
-				</div>
-				<p>
-					<img src="images/deer.png" style="position: relative; height: 90px; width: auto; margin-left: auto; margin-right: auto;"/>
-				</p>
-				<p>
-					<a href="http://www.sageconger.com" style="color: #8c6239">Sage
-						Conger</a> is the web developer, artist, and designer of the team's
-						apps. She is a senior in college and the proud girlfriend of Dan Turner!
-				</p>
-			</div>
-
+				<form name="feedback" method="post" id="feedback" action="http://formspree.io/thefoxanddeer@gmail.com">
+          <input type="text" name="name" placeholder="Name" required/>
+          <br><input type="email" name="email" placeholder="Email" required/>
+          <br><textarea name="comments" placeholder="Comments" cols="40" rows="5" required></textarea>
+          <br><input style="width: 20%;" type="submit" value="Submit"/>
+        </form>
 		</div>
 	</body>
 </html>
