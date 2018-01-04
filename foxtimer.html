@@ -16,6 +16,7 @@
 		<!-- Javascript -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script type='text/javascript' src='jquery.tipsy.js'></script>
+		<script type='text/javascript' src='ism-2.2.min.js'></script>
 		<script type='text/javascript'>
 			 $(function() {
 				 $('#owl').tipsy();
@@ -52,11 +53,28 @@
 				<p>
 					FoxTimer is a simple macOS menubar application for the Pomodoro Technique.
 				</p>
-				<img src="images/fox1.png" />
-				<img src="images/fox2.png" />
-				<img src="images/fox3.png" />
-				<img src="images/fox4.png" />
-				<img src="images/fox5.png" />
+
+				<div class="ism-slider" id="my-slider">
+				  <ol>
+				    <li>
+				      <img src="images/fox1.png">
+				      <div class="ism-caption ism-caption-0">The basic look of the application</div>
+				    </li>
+				    <li>
+				      <img src="images/fox2.png">
+				      <div class="ism-caption ism-caption-0">A pomodoro in progress</div>
+				    </li>
+				    <li>
+				      <img src="images/fox3.png">
+				      <div class="ism-caption ism-caption-0">A break in progress</div>
+				    </li>
+				    <li>
+				      <img src="images/fox4.png">
+				      <div class="ism-caption ism-caption-0">The settings screen</div>
+				    </li>
+				  </ol>
+				</div>
+
 			<div id="bigtext">Features</div>
 				<ul>
 					<li>Shows macOS notifications when timers are complete</li>
