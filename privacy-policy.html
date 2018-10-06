@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <!-- Basic Site Info -->
+		<link rel="shortcut icon" href="images/prof.png" />
+		<title>The Fox & Deer</title>
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'/>
+
+		<!-- Stylesheets -->
+		<link href='style.css' rel='stylesheet' type='text/css' />
+
+		<!-- Javascript -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script type='text/javascript' src='jquery.tipsy.js'></script>
+		<script type='text/javascript'>
+			 $(function() {
+				 $('#owl').tipsy();
+				 $('#cardinal').tipsy();
+				 $('#fox').tipsy();
+				 $('#duck').tipsy();
+			 });
+		 </script>
+	</head>
+
+	<body>
+		<!-- Logo and App Icons -->
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png"/></a>
+		</div>
+		<div id="overlay" class="app">
+			<a id="owl" href="owlist.html" title="OwList">
+				<img src="images/olist.png"></img>
+			</a>
+			<a id="cardinal" href="cardinalnumbers.html" title="CardinalNumbers">
+				<img src="images/cnumbers.png"></img>
+			</a>
+			<a id="fox" href="foxtimer.html" title="FoxTimer">
+				<img src="images/ftimer.png"></img>
+			</a>
+			<a id="duck" href="duckdock.html" title="DuckDock">
+				<img src="images/ddock.png"></img>
+			</a>
+		</div>
+
+		<!-- Content -->
+		<div id="content">
+			<div id="bigtext">Privacy Policy</div>
+
+			<div id="about" style="width: 100%">
+				<p>
+					We do not collect any data from our users.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
